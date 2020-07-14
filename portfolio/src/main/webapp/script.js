@@ -129,3 +129,9 @@
 	});
 
 })(jQuery);
+
+function fetchWelcomeMessage() {
+  fetch('/data').then(response => response.text()).then((quote) => {
+    document.getElementById('WelcomeMessage').innerText = quote;
+  });
+}
