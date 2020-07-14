@@ -1,18 +1,251 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Shweta Gurnani - CS Undergrad</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <!-- Libraries CSS Files -->
+      <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+      <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+      <!-- Main Stylesheet File -->
+      <link href="style.css" rel="stylesheet" />
+   </head>
+   <body id="page-top">
+
+      <!--Nav Start-->
+      <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top">
+         <div class="container">
+            <a class="navbar-brand js-scroll" href="#page-top">Shweta Gurnani</a>
+            <button
+               class="navbar-toggler collapsed"
+               type="button"
+               data-toggle="collapse"
+               data-target="#navbarDefault"
+               aria-controls="navbarDefault"
+               aria-expanded="false"
+               aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+            <div
+               class="navbar-collapse collapse justify-content-end"
+               id="navbarDefault"
+               >
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll active" href="#home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll" href="#background">BACKGROUND</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll" href="#What-I-Do">WHAT I DO</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll" href="#projects">MY PROJECTS</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!--Nav End -->
+
+      <!--Home Section Start -->
+      <section id="home" class="intro  bg-image">
+         <div class="overlay-mf2"></div>
+         <div class="container intro-container">
+            <h1 >I'm Shweta Gurnani</h1>
+            <h3 >Web Developer | Competitive Programmer</h1>
+           <ul class="list-unstyled list-inline intro-ul">
+               <li class="list-inline-item">
+                  <a href="https://www.facebook.com/shweta.gurnani.28/">
+                     <i class="ion-social-facebook"></i>
+                  </a>
+               </li>
+               <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/shwetagurnani28/">
+                     <i class="ion-social-linkedin"></i>
+                  </a>
+               </li>
+               <li class="list-inline-item">
+                  <a href="https://github.com/shwetagurnani">
+                     <i class="ion-social-github"></i>
+                  </a>
+               </li>
+            </ul> 
+            <br>
+            <a href="https://drive.google.com/file/d/1l2snTJPZ926PLSGJXOcf-x4Vw7hY_xQM/view?usp=sharing" id="resume-button">VIEW RESUME</a>
+         </div>
+      </section>
+       <!--Home Section End-->
+
+      <!-- About Section Start -->
+      <section id="about" class="paralax-mf bg-image">
+         <div class="overlay-mf"></div>
+         <div class="container about-container">
+            <div class="about-container-div">
+            <img src="img/shweta2.jpg" class="rounded-circle" alt="Shweta Gurnani" width="250" height="236">
+            <br><br>
+            <h5 >About Me</h5>
+               <br>
+            </div>
+            <div class="about-paragraph">
+               <p class="white-text">
+                  I'm Shweta Gurnani, and I am currently a Junior at IIIT Una,
+                  studying Computer Science and Engineering.
+               </p>
+               <p class="white-text">
+                  I'm a web developer and I love to play with Data Structures And Algorithms.
+                  I'm a complete nerd and I like to keep my grades up. 
+                  I hail from Agra, India and I love to be close to Indian Culture.
+                  I'm a complete foodie and you can challenge me anytime for a Harry Potter Quiz!</p>
+                  <br>
+               <span><i class="fa fa-quote-right"></i></span>
+            </div>
+         </div>
+      </section> 
+      <!-- About Section End -->
+     
+      <!-- Backgroud Section Starts -->
+      <section id="background">
+         <h3 class="background-heading">Background</h3>
+         <div class="container container-margin">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="service-box">
+                     <span class="ico-circle"><i class="ion-ios-book"></i></span>
+                     <h3>EDUCATION</h3>
+                     <ul>
+                        <li>Secondary School, St.George's College,Agra, 92.6%.</li>
+                        <li>Senior Secondary School, St.Clare's Senior Secondary School,Agra, 92.4%.</li>
+                        <li>Now pursuing B.Tech in Computer Science and Engineering from IIIT Una, 9.3/10.0 CGPA, currently the branch topper. </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="service-box">
+                     <span class="ico-circle"><i class="fa fa-tasks"></i></span>
+                     <h3>EXPERIENCE</h3>
+                     <ul>
+                        <li>Google Software Product Sprint Student (July 2020- Present)</li>
+                        <li>Contributor at GirlScript Summer of Code'20 (March 2020 - May 2020)</li>
+                        <li>Problem Setter at Force-IIIT Una (July 2020 - Present)</li>
+                        <li>Coordinator at Force-IIIT Una </li>
+                     </ul>
+               </div>
+           </div>
+         </div>
+      </section>
+      <!-- Background Section Ends -->
+
+      <!-- What I Do Section Start -->
+      <section id="What-I-Do" class="paralax-mf bg-image">
+         <div class="overlay-mf"></div>
+         <div style="opacity:90%">
+         <div class="container What-I-Do-Container">
+            <h5 >What I Do..</h5>
+            <br><br>
+            <div class="row">
+               <div class="col-sm-4 What-I-Do-Col">
+                  <img src="img/codeforces.png" class="rounded-circle" alt="CodeForces-icon" width="100" height="100" >
+                  <br><br>
+                  <h6 >Competitive Programming</h6>
+                  <br>
+                  <p >I love to build logic and solve problems, and can be found mostly on coding platforms like CodeForces,etc.</p>
+                  <ul class="list-unstyled list-inline intro-ul">
+                     <li class="list-inline-item"><a href="https://codeforces.com/profile/Shweta28"><span class="iconify icon-color" data-icon="simple-icons:codeforces" data-inline="false"></span></a></li>
+                     <li class="list-inline-item"><a href="https://www.hackerearth.com/@shweta641"><span class="iconify icon-color"data-icon="simple-icons:hackerearth" data-inline="false"></span></a></li>
+                     <li class="list-inline-item"><a href="https://leetcode.com/shweta_gurnani/"><span class="iconify icon-color" style="color:white" data-icon="simple-icons:leetcode" data-inline="false"></span></a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-4 What-I-Do-Web-Col">
+                  <img src="img/webdev.png" class="rounded-circle" alt="" width="100" height="100">
+                  <br><br>
+                  <h6 >Web Development</h6>
+                  <br>
+                  <p >I am Full Stack Web developer. I have build many web applications in MERN stack.</p>
+                 <br><br><br>
+               </div>
+               <div class="col-sm-4 What-I-Do-Open-Col">
+                  <img src="img/github-octocat.png" class="rounded-circle" alt="Shweta Gurnani" width="100" height="100" >
+                  <br><br>
+                  <h6 >Open Source</h6>
+                  <br>
+                  <p >I am open source enthusiast. I contributed to Mozilla Firefox code this summer and also took part in GSSoC'20 and was among top 25 participants.</p>  
+               </div>
+            </div>
+            <br><br>
+         </div>
+         </div>
+         </div>
+      </section>
+      <!-- What I Do Section End -->
+
+      <!-- Projects Section Starts -->
+      <section id="projects">
+         <h3 class="background-heading">My projects</h3>
+         <div class="container container-margin">
+            <div class="row">
+               <div class="col-md-4">
+                     <div class="service-box">
+                        <span class="ico-circle"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        <h3>Procuratio</h3>
+                     <ul>
+                       <li> Built an Event Management System to get permissions for Lecture Hall and Auditorium for conducting the workshops.</li>
+                        <li>Implemented functionalities like sending Email using SendGrid.</li>
+                        <li>Used NodeJS for Back-End development, HTML, CSS, JavaScript for Front-End development and MongoDB for database management.</li>
+                        <br>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="service-box">
+                     <span class="ico-circle"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+                     <h3>BlogPost</h3>
+                     <ul>
+                        <li>Built a Blog-Post Website. It has a Home page to view all the post based on the time of posting. Users can create a new post and publish the same.</li>
+                        <li>Users can comment on any of the posts.</li>
+                        <li>Register and login functionality with valid email id.</li>
+                        <li>It is a complete MERN application.</li>
+                        <br><br>
+                     </ul>
+               </div>
+           </div>
+           <div class="col-md-4">
+            <div class="service-box">
+               <span class="ico-circle" ><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+               <h3>Dummy Users</h3>
+               <ul>
+               <li>Developed a platform similar to YouTube which showcase the number of views on each video.</li>
+               <li>Since the platform is relatively new, I added dummy views to the real views which will change every second for every video according to a formula.</li>
+               <li>Used NodeJS for Back-End development, HTML, CSS, JavaScript for Front-End development and MySQL for database management.</li>
+               </ul>
+            </div>
+            </div>
+         </div>
+      </section> 
+      <!-- Projects Section Ends -->
+
+      <!--/ Section Contact-footer End /-->
+      <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+      <div id="preloader"></div>
+      <!-- JavaScript Libraries -->
+      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+      <script src="lib/jquery/jquery.min.js"></script>
+      <script src="lib/jquery/jquery-migrate.min.js"></script>
+      <script src="lib/popper/popper.min.js"></script>
+      <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/counterup/jquery.waypoints.min.js"></script>
+      <script src="lib/counterup/jquery.counterup.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <script src="lib/lightbox/js/lightbox.min.js"></script>
+      <!-- Template Main Javascript File -->
+      <script src="script.js"></script>
+   </body>
 </html>
