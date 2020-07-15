@@ -130,8 +130,22 @@
 
 })(jQuery);
 
-function fetchWelcomeMessage() {
-  fetch('/data').then(response => response.text()).then((quote) => {
-    document.getElementById('WelcomeMessage').innerText = quote;
+function fetchComments() {
+  fetch('/data').then(response => response.json()).then((comment) => {
+    const comments = document.getElementById('commentSection');
+    comments.innerHTML = '';
+    comments.appendChild(
+        createListElement('Comment 1: ' + comment[0]));
+    comments.appendChild(
+        createListElement('Comment 2: ' + comment[1]));
+    comments.appendChild(
+        createListElement('Comment 3: ' + comment[2]));
+    console.log(comments);
   });
+}
+
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerText = text;
+  return liElement;
 }
