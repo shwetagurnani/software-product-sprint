@@ -11,7 +11,7 @@
       <!-- Main Stylesheet File -->
       <link href="style.css" rel="stylesheet" />
    </head>
-   <body id="page-top">
+   <body onload="fetchComments()" id="page-top">
 
       <!--Nav Start-->
       <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top">
@@ -96,7 +96,7 @@
             </div>
             <div class="about-paragraph">
                <p class="white-text">
-                  I'm Shweta Gurnani, and I am currently a Junior at IIIT Una,
+                  I'm Shweta Gurnani, na na naand I am currently a Junior at IIIT Una,
                   studying Computer Science and Engineering.
                </p>
                <p class="white-text">
@@ -231,6 +231,19 @@
       </section> 
       <!-- Projects Section Ends -->
 
+      <!-- Comment Section Starts -->
+      <section>
+      <form action="/data" method="POST">
+         <input type="text" name="name-input" placeholder="Enter your name"/>
+      <input type="text" name="comment-input" placeholder="Write your response"/>
+      <br/><br/>
+      <input type="submit"/>
+      </form>
+      </section>
+     <!-- Comment Section ends -->
+
+     <div id="commentSection"></div>
+     
       <!--/ Section Contact-footer End /-->
       <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
       <div id="preloader"></div>
