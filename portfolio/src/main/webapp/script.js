@@ -132,12 +132,16 @@
 
 function fetchComments() {
   fetch('/data').then(response => response.json()).then((comment) => {
-	console.log(comment);
     const comments = document.getElementById('commentSection');
-	comments.innerHTML = '';
-	comment.forEach((line) => {
-	comments.appendChild(createListElement(line.name + " " + line.comment));
-	});
+    comments.innerHTML = '';
+    comments.appendChild(
+        createListElement('Comment 1: ' + comment[0]));
+    comments.appendChild(
+        createListElement('Comment 2: ' + comment[1]));
+    comments.appendChild(
+        createListElement('Comment 3: ' + comment[2]));
+    console.log(comments);
+
   });
 }
 
