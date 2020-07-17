@@ -14,7 +14,6 @@
 
 package com.google.sps.servlets;
 
-<<<<<<< HEAD
 import com.google.appengine.api.datastore.DatastoreService;
 import com.google.appengine.api.datastore.DatastoreServiceFactory;
 import com.google.appengine.api.datastore.Entity;
@@ -23,19 +22,13 @@ import com.google.appengine.api.datastore.Query;
 import com.google.appengine.api.datastore.Query.SortDirection;
 import com.google.gson.Gson;
 import com.google.sps.Comment;
-=======
-import com.google.gson.Gson;
->>>>>>> 3fcd420f36420e411ab6fdc765c79254b214aaf1
 import java.io.IOException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList; 
-<<<<<<< HEAD
 import java.util.List;
-=======
->>>>>>> 3fcd420f36420e411ab6fdc765c79254b214aaf1
 
 /** Servlet that returns some example content. TODO: modify this file to handle comments data */
 @WebServlet("/data")
@@ -43,7 +36,6 @@ public class DataServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-<<<<<<< HEAD
     Query query = new Query("Comment");
 
     DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
@@ -80,24 +72,6 @@ public class DataServlet extends HttpServlet {
 
   // Function to convert ArrayList into JSON using Gson
   private String convertToJsonUsingGson(ArrayList comments) {
-=======
-    // Create ArrayList of Comments
-    ArrayList<String> comments = new ArrayList<String> ();
-    comments.add("Good Work");
-    comments.add("Nice Work");
-    comments.add("Amazing Work");
-
-    // Convert ArrayList comments to JSON
-    String json = convertToJsonUsingGson(comments);
-
-    // Send the JSON as the response
-    response.setContentType("application/json;");
-    response.getWriter().println(json);
-  }
-
-    // Function to convert ArrayList into JSON using Gson
-    private String convertToJsonUsingGson(ArrayList comments) {
->>>>>>> 3fcd420f36420e411ab6fdc765c79254b214aaf1
     Gson gson = new Gson();
     String json = gson.toJson(comments);
     return json;
