@@ -230,20 +230,34 @@
          </div>
       </section> 
       <!-- Projects Section Ends -->
-
-      <!-- Comment Section Starts -->
-      <section>
-      <form action="/data" method="POST">
-         <input type="text" name="name-input" placeholder="Enter your name"/>
-      <input type="text" name="comment-input" placeholder="Write your response"/>
-      <br/><br/>
-      <input type="submit"/>
-      </form>
+      
+        <!-- Comment Section Start -->
+      <section id="What-I-Do" class="paralax-mf bg-image">
+         <div class="overlay-mf"></div>
+         <div style="opacity:90%">
+         <div class="container What-I-Do-Container">
+            <h5 >Would Like to say anything!</h5>
+         <div class="container comment-container">
+            <form action="/data" method="POST">
+              <div class="form-group">
+                <label for="name-input" class="form-input" style="color:white">Name</label>
+                <input type="text" class="form-control" name="name-input" placeholder="Enter your name"/>
+              </div>
+              <div class="form-group">
+                <label for="comment-input" class="form-input" style="color:white">Say Anything:</label>
+                <input type="text" class="form-control" name="comment-input" placeholder="Say response"/>
+              </div>
+              <button type="submit" class="btn btn-default comment-submit" display>Submit</button>
+            </form>
+         </div> 
+         </div>
+         </div>
+         </div>
       </section>
-     <!-- Comment Section ends -->
-
+     <h4 style:"margin-bottom:7rem;margin-top:10rem; text-align:center">See What Other Say </h4>
      <div id="commentSection"></div>
-
+      <!-- comment Section ends -->
+     
       <!--/ Section Contact-footer End /-->
       <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
       <div id="preloader"></div>
