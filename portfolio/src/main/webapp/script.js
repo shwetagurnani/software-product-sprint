@@ -129,3 +129,20 @@
 	});
 
 })(jQuery);
+
+function fetchComments() {
+  fetch('/data').then(response => response.json()).then((comment) => {
+	console.log(comment);
+    const comments = document.getElementById('commentSection');
+	comments.innerHTML = '';
+	comment.forEach((line) => {
+	comments.appendChild(createListElement('<div class="container"><div class="card" id="comment-container"><div class="card-body"><h5>'+line.name +'</h5>' +line.comment + '</div></div></div>'));
+	});
+  });
+}
+
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerHTML = text;
+  return liElement;
+}
